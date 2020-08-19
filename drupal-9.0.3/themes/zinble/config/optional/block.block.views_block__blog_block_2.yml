@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog
+  module:
+    - views
+  theme:
+    - zinble
+id: views_block__blog_block_2
+theme: zinble
+region: footer1
+weight: 0
+provider: null
+plugin: 'views_block:blog-block_2'
+settings:
+  id: 'views_block:blog-block_2'
+  label: 'Recent Articles'
+  provider: views
+  label_display: visible
+  views_label: 'Recent Articles'
+  items_per_page: none
+visibility: {  }

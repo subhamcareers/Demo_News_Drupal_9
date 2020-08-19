@@ -1,0 +1,14 @@
+# Bootstrap Layout Builder base styles.
+base:
+  css:
+    theme:
+      css/base.css: { }
+  js:
+    js/base.js: { }
+
+background-media-local-video:
+  css:
+    theme:
+      css/background_media_local_video.css: { }
+  js:
+    js/background_media_local_video.js: { }

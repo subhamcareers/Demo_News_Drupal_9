@@ -1,0 +1,118 @@
+// Media library.
+// @TODO Add class for media.
+.media-library-item {
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  vertical-align: top;
+  border: 1px solid $gray-dbd;
+  margin: 0 auto;
+  background: #fff;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+
+  *, *:not(div) {
+    background: transparent;
+  }
+
+  .button.media-library-item__remove {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    padding: 0;
+    -webkit-transition: 0.2s border-color;
+    -o-transition: 0.2s border-color;
+    transition: 0.2s border-color;
+    color: transparent;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background: url(../images/ex.svg) #fff center no-repeat;
+    -webkit-background-size: 16px 16px;
+    background-size: 16px 16px;
+    text-shadow: none;
+
+    &:hover, &:focus {
+      background: url(../images/ex_dark.svg) #fff center no-repeat;
+    }
+
+    &.button {
+      &:disabled, &:disabled:active, &:hover, &:focus {
+        background: url(../images/ex_dark.svg) #fff center no-repeat;
+      }
+    }
+  }
+
+  .js-click-to-select-trigger {
+    overflow: hidden;
+    cursor: pointer;
+  }
+}
+
+.media-library-views-form,
+.media-library-selection,
+.media-library-add-form__selected-media .details-wrapper,
+.media-library-views-form__bulk_form,
+.media-library-view .form--inline {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.media-library-selection {
+  margin: 1em 0;
+}
+
+.media-library-item__preview {
+  padding-bottom: 34px;
+}
+
+.media-library-form-element {
+  .media-library-open-button {
+    color: $gray-212;
+    background-color: $gray-f8f;
+    border-color: $gray-f8f;
+
+    &:hover {
+      color: $gray-212;
+      background-color: $gray-e2e;
+      border-color: $gray-dae;
+    }
+  }
+
+  .media-library-form-element-empty-text,
+  .description,
+  .js-hide,
+  .media-library-selection:empty {
+    display: none !important;
+  }
+}
+
+.media-library-item__attributes {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  padding: 5px;
+  max-height: calc(100% - 50px);
+  overflow: hidden;
+  background: $white !important;
+}
+
+.media-library-item__attributes {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  padding: 5px;
+  max-height: calc(100% - 50px);
+  overflow: hidden;
+  background: $white !important;
+}
+
+.media-library-selection {
+  margin: 0;
+
+  .media-library-item--grid {
+    width: 100%;
+  }
+}

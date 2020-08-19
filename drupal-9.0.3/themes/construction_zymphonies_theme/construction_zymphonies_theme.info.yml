@@ -1,0 +1,87 @@
+name: Construction Zymphonies Theme
+type: theme
+description: 'Designed & Developed by <a href=https://www.zymphonies.com>Zymphonies</a><br/>Contact us for any kind of Drupal services <a href=mailto:info@zymphonies.com>info@zymphonies.com</a>'
+package: core
+base theme: false
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+# libraries
+libraries:
+  - construction_zymphonies_theme/bootstrap
+  - construction_zymphonies_theme/flexslider
+  - construction_zymphonies_theme/fontawesome
+  - construction_zymphonies_theme/smartmenus
+  - construction_zymphonies_theme/owl
+  - construction_zymphonies_theme/global-components
+
+# Regions
+regions:
+
+  # Header
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  search: 'Search'
+
+  # Top message
+  top_message: 'Top message'
+
+  # Top widgets
+  topwidget_title: 'Top widget title'
+  topwidget_first: 'Top widget first'
+  topwidget_second: 'Top widget second'
+  topwidget_third: 'Top widget third' 
+
+  # Global region
+  highlighted: 'Highlighted' 
+  page_title: 'Page title'
+  breadcrumb: 'Breadcrumb'
+  content: 'Content'
+  sidebar_first: 'Left sidebar'
+  sidebar_second: 'Right sidebar'
+
+  # Features widgets
+  features_title: 'Features title'
+  features_first: 'Features widget first'
+  features_second: 'Features widget second'
+  features_third: 'Features widget third'
+
+  # Updates widgets
+  updates_title: 'Updates title'
+  updates_first: 'Updates widget first'
+  updates_second: 'Updates widget second'
+  updates_third: 'Updates widget third'
+  updates_forth: 'Updates widget forth'
+
+  # Middle widgets
+  midwidget_title: 'Middle widget title'
+  midwidget_first: 'Middle widget first'
+  midwidget_second: 'Middle widget second'
+  midwidget_third: 'Middle widget third'
+  midwidget_forth: 'Middle widget forth'
+
+  # Bottom widgets
+  bottom_title: 'Bottom title'
+  bottom_first: 'Bottom widget first'
+  bottom_second: 'Bottom widget second'
+  bottom_third: 'Bottom widget third'
+  bottom_forth: 'Bottom widget forth'
+
+  # Clients widgets
+  clients_title: 'Clients title'
+  clients: 'Clients'
+  
+  # Footer widgets
+  footer_title: 'Footer title'
+  footer_first: 'Footer widget first'
+  footer_second: 'Footer widget second'
+  footer_third: 'Footer widget third'
+
+  # Auto hidden
+  auto_hidden_block: 'Auto hidden blocks'
+
+
+# Information added by Drupal.org packaging script on 2020-07-11
+version: '1.0.1'
+project: 'construction_zymphonies_theme'
+datestamp: 1594480153

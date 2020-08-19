@@ -1,0 +1,75 @@
+// Background colors field.
+.bootstrap_layout_builder_bg_color {
+  // fieldset-wrapper to solve Bootstrap 3 drupal theme issue.
+  .form-radios, .fieldset-wrapper {
+    // Solve Barrio bootstrap 4 issue.
+    > div.radio {
+      display: flex;
+    }
+    .form-item-layout-settings-ui-tab-content-appearance-container-wrapper-bg-color-class{
+      padding: 0;
+    }
+    input {
+      visibility: hidden;
+      position: absolute;
+
+      &:checked + label.option {
+        border: 2px solid #000000;
+      }
+    }
+
+    label {
+      cursor: pointer !important;
+      border: 1px solid #000000;
+      border-radius: 2px;
+      font-size: 0.00001px;
+      position: relative;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      float: left;
+      margin: 5px 5px 5px 0;
+      padding: 0;
+      white-space: nowrap;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:after {
+        display: table;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        right: 0px;
+        bottom: 0;
+        z-index: 1;
+        font-size: 20px;
+        text-align: center;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+      }
+
+      &._none {
+        background: $white !important;
+
+        &:after {
+          width: 20px;
+          height: 20px;
+          top: 50%;
+          left: 50%;
+          margin: -10px 0 0 -10px;
+          content: '';
+          position: absolute;
+          background: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjZjM1NjU2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI0IDI0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZGlzcGxheTpub25lO30KPC9zdHlsZT48Zz48Zz48Zz48cGF0aCBkPSJNMiwyMi41Yy0wLjEyOCwwLTAuMjU2LTAuMDQ5LTAuMzU0LTAuMTQ2Yy0wLjE5NS0wLjE5NS0wLjE5NS0wLjUxMiwwLTAuNzA3bDIwLTIwYzAuMTk1LTAuMTk1LDAuNTEyLTAuMTk1LDAuNzA3LDAgICAgIHMwLjE5NSwwLjUxMiwwLDAuNzA3bC0yMCwyMEMyLjI1NiwyMi40NTEsMi4xMjgsMjIuNSwyLDIyLjV6Ij48L3BhdGg+PC9nPjxnPjxwYXRoIGQ9Ik0yMiwyMi41Yy0wLjEyOCwwLTAuMjU2LTAuMDQ5LTAuMzU0LTAuMTQ2bC0yMC0yMGMtMC4xOTUtMC4xOTUtMC4xOTUtMC41MTIsMC0wLjcwN3MwLjUxMi0wLjE5NSwwLjcwNywwbDIwLDIwICAgICBjMC4xOTUsMC4xOTUsMC4xOTUsMC41MTIsMCwwLjcwN0MyMi4yNTYsMjIuNDUxLDIyLjEyOCwyMi41LDIyLDIyLjV6Ij48L3BhdGg+PC9nPjwvZz48L2c+PC9zdmc+") center center no-repeat;
+          background-size: contain;
+        }
+      }
+      // Add active class to solve Bootstrap 3 drupal theme issue.
+      &.active {
+        border: 2px solid #000000;
+      }
+    }
+  }
+}

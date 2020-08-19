@@ -1,0 +1,50 @@
+global-styling:
+  Version: 1.0
+  css:
+    theme:
+      https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css: { type: external, minified: true }
+      https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css: { type: external, minified: true }
+      css/style.css: {}
+  js:
+    https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js: { type: external, minified: true, crossorigin: "anonymous" }
+    https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js: { type: external, minified: true }
+    js/custom.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+bootstrap:
+  remote: http://getbootstrap.com/
+  version: 4.4.1
+  license:
+    name: MIT
+    url: https://github.com/twbs/bootstrap/blob/master/LICENSE
+    gpl-compatible: false
+  css:
+    theme:
+      https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css: { type: external, minified: true }
+      
+
+googlefonts-roboto:
+  remote: https://www.google.com/fonts
+  version: VERSION
+  license:
+    name: SIL OFL
+    url: https://www.google.com/fonts#AboutPlace:about
+    gpl-compatible: true
+  css:
+    theme:
+      https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap: { type: external, minified: true }
+
+font-awesome:
+  remote: http://fontawesome.io/
+  version: 4.7.0
+  license:
+    name: MIT
+    url: http://fontawesome.io/license/
+    gpl-compatible: true
+  css:
+    theme:
+      https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css: { type: external, minified: true }

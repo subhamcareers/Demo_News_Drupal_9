@@ -1,0 +1,16 @@
+name: 'Bootstrap Layout Builder'
+description: 'Add Bootstrap Grid support to Layout Builder module.'
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+configure: bootstrap_layout_builder.settings
+package: 'Layout Builder'
+dependencies:
+  - drupal:layout_builder
+  - media_library_form_element
+  - media_library_theme_reset
+
+# Information added by Drupal.org packaging script on 2020-08-04
+version: '1.3.2'
+project: 'bootstrap_layout_builder'
+datestamp: 1596550116

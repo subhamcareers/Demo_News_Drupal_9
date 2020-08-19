@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  theme:
+    - zinble
+_core:
+  default_config_hash: Ub2wzDlA64Jjt1-ZI9iIAKysqyV2eXR2VMUrJfZhdO8
+id: zinble_local_tasks
+theme: zinble
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

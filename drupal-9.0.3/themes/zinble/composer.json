@@ -1,0 +1,17 @@
+{
+  "name": "drupal/zinble",
+  "description": "Drupal 8 theme built on the Bootstrap 4 framework.",
+  "type": "drupal-theme",
+  "homepage": "https://www.drupal.org/u/jimmy_sebastian",
+  "authors": [
+    {
+      "name": "Jimmy Sebastian",
+      "email": "jimmy.sebastian2@cognizant.com",
+      "homepage": "https://www.drupal.org/u/jimmy_sebastian",
+      "role": "Developer"
+    }
+  ],
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "require": { }
+}

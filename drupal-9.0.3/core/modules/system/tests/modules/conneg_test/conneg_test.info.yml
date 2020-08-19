@@ -1,0 +1,10 @@
+name: Content negotiation test
+type: module
+description: 'Support testing content negotiation variations.'
+package: Testing
+# version: VERSION
+
+# Information added by Drupal.org packaging script on 2020-08-05
+version: '9.0.3'
+project: 'drupal'
+datestamp: 1596664630

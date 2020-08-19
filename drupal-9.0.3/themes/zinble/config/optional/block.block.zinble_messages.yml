@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - zinble
+_core:
+  default_config_hash: Zi7ecoX-g3Gw3uNyv6l0PH0Mxf_5B4QcD7Wa9QKKCMA
+id: zinble_messages
+theme: zinble
+region: messages
+weight: -10
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

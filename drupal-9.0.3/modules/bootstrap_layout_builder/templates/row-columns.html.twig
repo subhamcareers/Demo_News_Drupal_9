@@ -1,0 +1,56 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a bootstrap columns layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{% set classes = [
+  'layout',
+  'row',
+  content['#settings']['remove_gutters'] is same as(1) ? 'no-gutters' : '',
+] %}
+
+
+{% if content %}
+  {% if content['container'] %}
+
+    {% if video_background_url %}
+      {{ attach_library('bootstrap_layout_builder/background-media-local-video') }}
+      <div class="background-local-video {{ video_wrapper_classes }}">
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="{{ video_background_url }}" type="video/mp4">
+      </video>
+      <div class="video-content">
+    {% endif %}
+
+    <div {{ container_wrapper_attributes }}>
+    <div {{ container_attributes }}>
+  {% endif %}
+
+  <div {{ attributes.addClass(classes) }}>
+    {% for i in 1..12 %}
+      {% set region = "blb_region_col_" ~ i %}
+      {% if content[region] %}
+        <div {{ region_attributes[region] }}>
+          {{ content[region] }}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  {% if content['container'] %}
+    {% if video_background_url %}
+      </div>
+      </div>
+    {% endif %}
+
+    </div>
+    </div>
+  {% endif %}
+{% endif %}

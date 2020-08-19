@@ -1,0 +1,17 @@
+.paragraph-type .paragraph-type-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.paragraphs-dropdown-toggle:hover,
+.paragraphs-dropdown-toggle:focus {
+  box-shadow: none;
+  border: 0;
+  background-color: #f7fcff;
+}
+
+.paragraphs-dropdown-toggle {
+  background-color: transparent;
+  height: 40px;
+  border-radius: 0;
+}

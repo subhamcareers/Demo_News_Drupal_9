@@ -1,0 +1,209 @@
+#media-library-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#media-library-add-form-wrapper {
+  background: #d9e8f4;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 640px) {
+  .media-library-content {
+    flex: 6;
+  }
+}
+
+ul.media-library-menu {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  background: #f7fcff;
+}
+
+.media-library-menu li {
+  list-style: none;
+  flex: 1;
+  text-align: center;
+  border-bottom: 1px solid rgba(6, 120, 190, 0.17);
+  background-color: #fff;
+}
+
+@media screen and (min-width: 640px) {
+  ul.media-library-menu {
+    border-right: 4px solid #0678be;
+    flex-direction: column;
+    margin: 0 2rem 0 0;
+  }
+
+  .media-library-menu li {
+    flex: unset;
+    text-align: left;
+  }
+}
+
+.media-library-menu li a {
+  padding: 0.8rem 1rem;
+  line-height: 2;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.media-library-menu li a.active {
+  background-color: #0678be;
+  color: #fff;
+}
+
+.media-library-menu li a:not(.active):hover {
+  background-color: #f7fcff;
+}
+
+.view-media-library .view-header {
+  align-self: flex-end;
+  margin: 1em 0;
+  text-align: right;
+}
+
+.view-media-library .views-display-link {
+  margin: 0;
+  color: #333;
+  font-size: 15px;
+  line-height: 16px;
+  border-radius: 26px;
+  padding: 4px 10px 4px 26px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.view-media-library .views-display-link.is-active {
+  background-color: #d9e8f4;
+}
+
+.view-media-library .views-display-link-widget {
+  margin-right: 15px;
+  background: url(../../../../../core/misc/icons/333333/grid.svg) 6px center no-repeat;
+}
+
+.view-media-library .views-display-link-widget_table {
+  background: url(../../../../../core/misc/icons/333333/table.svg) 6px center no-repeat;
+}
+
+#media-library-view .form--inline {
+  align-items: center;
+}
+
+#media-library-view .form--inline .form-wrapper .form-submit {
+  margin-top: 10px;
+}
+
+#media-library-view .view-content .views-form form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#media-library-view .view-content .views-form form .views-row {
+  display: flex;
+  margin: 0.5rem 0.8rem;
+  width: 22%;
+  flex-basis: 22%;
+  border: 2px solid transparent;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.media-librayr-item--name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+@media screen and (min-width: 640px) {
+  #media-library-view .view-content .views-form form .views-row {
+    width: 22%;
+  }
+
+  .media-librayr-item--name {
+    white-space: nowrap;
+  }
+}
+
+#media-library-view .view-content .views-form form .views-row:hover {
+  border: 2px solid #0678be;
+}
+
+#media-library-view .view-content .views-form form .views-row.checked {
+  background: #f7fcff;
+  border: 2px solid #0678be;
+}
+
+#media-library-view .view-content .views-form form .views-row .views-field-media-library-select-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+#media-library-view .view-content .views-form form .views-row .views-field-rendered-entity .field--type-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.js-media-library-add-form .item-list ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.js-media-library-add-form .item-list ul li {
+  list-style: none;
+  margin: 0.5rem;
+  max-width: 15%;
+}
+
+.js-media-library-add-form .item-list ul li img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+.js-media-library-add-form .item-list ul li .form-item-name label {
+  margin: 0;
+}
+
+.js-media-library-widget .js-media-library-selection {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.js-media-library-widget .js-media-library-selection .js-media-library-item {
+  display: flex;
+  margin: 0.5rem 0.8rem;
+  width: 22%;
+  flex-direction: column-reverse;
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+.js-media-library-widget .js-media-library-selection .js-media-library-item img {
+  max-width: 150px;
+  height: 130px;
+  object-fit: contain;
+}
+
+.js-media-library-widget .js-media-library-selection .js-media-library-item .form-submit {
+  margin: 0;
+  width: 100%;
+}

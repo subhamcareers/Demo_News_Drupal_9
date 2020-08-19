@@ -1,0 +1,26 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - zinble
+_core:
+  default_config_hash: dfKovMn7HRP0bVe0Fm0u60VOyS8f_PMCbDY8BzsBYUg
+id: zinble_tools
+theme: zinble
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

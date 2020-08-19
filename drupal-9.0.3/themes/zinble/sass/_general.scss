@@ -1,0 +1,31 @@
+body {
+	font-size: 13px;
+	line-height: 24px;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #666;
+}
+.page-tags {
+  ul {
+	padding-left: 0px;
+	display: inline-block;
+	li {
+	  display: inline-block;
+	  width: auto;
+	  height: auto;
+	  margin-right: 10px;
+	}
+  }
+}
+
+
+blockquote {
+	overflow: hidden;
+	font-size: 20px;
+	line-height: 40px;
+	font-style: italic;
+	background: #f5f5f5;
+	padding: 32px;
+	color: #777;
+	font-weight: 300;
+	border-left: 4px solid $cerulean;
+}

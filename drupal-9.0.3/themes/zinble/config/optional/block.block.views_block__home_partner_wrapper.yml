@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.home_banner
+  module:
+    - system
+    - views
+  theme:
+    - zinble
+id: views_block__home_partner_wrapper
+theme: zinble
+region: content_top
+weight: -11
+provider: null
+plugin: 'views_block:home_banner-block_3'
+settings:
+  id: 'views_block:home_banner-block_3'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

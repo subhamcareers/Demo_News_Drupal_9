@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 220_x_220_resize
+label: '220 x 220 Resize'
+effects:
+  17841da2-436e-4fc8-86f1-4351123af6e7:
+    uuid: 17841da2-436e-4fc8-86f1-4351123af6e7
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 220
+      height: 220
+      anchor: center-center

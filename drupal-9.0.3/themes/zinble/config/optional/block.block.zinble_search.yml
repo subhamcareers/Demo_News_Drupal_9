@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - search
+    - system
+  theme:
+    - zinble
+_core:
+  default_config_hash: fxdbU9-kPyPPrPSSGqEDaQS96v85tjJYto_Ptry6C5c
+id: zinble_search
+theme: zinble
+region: sidebar_second
+weight: -8
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: node_search
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

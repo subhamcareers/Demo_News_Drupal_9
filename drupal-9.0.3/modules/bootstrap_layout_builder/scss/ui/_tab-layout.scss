@@ -1,0 +1,133 @@
+// Container Type
+.blb_container_type {
+  .form-radios,
+  .fieldset-wrapper > div {
+    display: flex;
+  }
+}
+
+.form-item-layout-settings-ui-tab-content-layout-container-type {
+  position: relative;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+
+  &:first-child input + label {
+    border-right: 0;
+  }
+
+  &:last-child input + label {
+    border-left: 0;
+  }
+
+  input {
+    opacity: 0;
+    position: absolute;
+
+    + label {
+      border: 2px solid white;
+      padding: 10px;
+      height: 50px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    // Active state.
+    &:checked + label {
+      color: $gray-444;
+      background-color: $white;
+    }
+  }
+
+  // Custom fix for Bootstrap 3 Drupal theme.
+  label {
+    border: 2px solid white;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+
+    + input {
+      opacity: 0;
+      position: absolute;
+    }
+
+    // Active state.
+    &.active {
+      color: $gray-444;
+      background-color: $white;
+    }
+  }
+
+  // Pill style toggle.
+  &:first-child input + label {
+    border-radius: 8px 0 0 8px;
+  }
+
+  &:last-child input + label {
+    border-radius: 0 8px 8px 0;
+  }
+}
+
+// Graphical Layout Columns
+.blb_breakpoint_cols {
+  label {
+    position: relative;
+    display: flex;
+    margin: 0 -5px;
+    cursor: pointer;
+
+    &:hover {
+      .blb_tooltip {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0px);
+      }
+
+      .blb_breakpoint_col {
+        background-color: $white;
+        color: $gray-444;
+      }
+    }
+  }
+
+  input {
+    opacity: 0;
+    height: 0;
+    display: block;
+
+    &:checked + label .blb_breakpoint_col
+     {
+      color: $white;
+      background-color: #277abd;
+    }
+  }
+
+  
+}
+
+.blb_breakpoint_col {
+  padding: 6px 10px;
+  margin: 0 5px;
+  text-align: center;
+  color: $gray-444;
+  background-color: rgba($white, .7);
+  transition: all .25s ease-out;
+  border-radius: 3px;
+
+  &.bp-selected {
+    color: $white;
+    background-color: #277abd;
+
+    &:hover {
+      color: $gray-444;
+    }
+  }
+}

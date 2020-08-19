@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Default theme implementation for an 'input' #type form element.
+ *
+ * Available variables:
+ * - attributes: A list of HTML attributes for the input element.
+ * - children: Optional additional rendered elements.
+ *
+ * @see template_preprocess_input()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% set newClass = 'form-control' %}
+
+{% if attributes.hasClass('button') %}
+  {% set newClass = 'btn btn-primary' %}
+{% endif %}
+
+{% if attributes.hasClass('form-checkbox') %}
+  {% set newClass = 'form-check-input' %}
+{% endif %}
+
+
+<input{{ attributes.addClass(newClass) }} />{{ children }}

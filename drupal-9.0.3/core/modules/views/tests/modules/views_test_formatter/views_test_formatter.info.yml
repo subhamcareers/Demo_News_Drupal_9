@@ -1,0 +1,12 @@
+name: 'Views Test Formatter'
+type: module
+description: 'Provides test field formatters.'
+package: Testing
+# version: VERSION
+dependencies:
+  - drupal:views
+
+# Information added by Drupal.org packaging script on 2020-08-05
+version: '9.0.3'
+project: 'drupal'
+datestamp: 1596664630

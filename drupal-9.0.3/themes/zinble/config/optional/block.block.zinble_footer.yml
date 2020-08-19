@@ -1,0 +1,26 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - zinble
+_core:
+  default_config_hash: zfqVtLMV9qwc0FR7RmCaJvMs-MXIOQj7tExE8DRel34
+id: zinble_footer
+theme: zinble
+region: footer4
+weight: -12
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Quick Contact'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

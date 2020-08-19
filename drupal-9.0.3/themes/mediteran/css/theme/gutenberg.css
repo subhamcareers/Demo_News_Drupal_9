@@ -1,0 +1,226 @@
+.field--gutenberg #edit-body-0-format {
+  display: none;
+}
+
+.gutenberg-header-settings .form-actions {
+  margin: 0;
+  padding: 0;
+}
+
+.components-panel__header.edit-post-sidebar-header .components-icon-button {
+  display: none;
+}
+
+.gutenberg__editor .edit-post-layout .edit-post-sidebar .edit-post-sidebar__panel-tabs ul {
+  width: 100%;
+}
+
+@media screen and (min-width: 782px) {
+.gutenberg__editor .edit-post-layout.is-sidebar-opened .edit-post-sidebar {
+    min-width: 350px;
+  }
+}
+
+.components-panel__header.edit-post-sidebar__panel-tabs li {
+  flex: 1;
+}
+
+.edit-post-sidebar button.edit-post-sidebar__panel-tab {
+  width: 100%;
+}
+
+.gutenberg__editor #edit-status-wrapper {
+  margin: 1rem 0;
+}
+
+.gutenberg__editor #edit-status-wrapper .form-item {
+  padding: 0;
+}
+
+
+.gutenberg__editor #edit-status-wrapper .form-item label.option {
+  position: relative;
+  top: 2px;
+  margin-left: 2px;
+  font-weight: bolder;
+}
+
+.edit-post-sidebar .entity-meta .entity-meta__header {
+  padding: 10px 10px;
+}
+
+.edit-post-sidebar .entity-meta {
+  margin-bottom: 0;
+}
+
+.gutenberg__editor .components-icon-button:not(:disabled):not([aria-disabled=true]):not(.is-default):hover {
+  box-shadow: unset;
+}
+
+@media screen and (min-width: 782px) {
+  .edit-post-text-editor__body {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.components-icon-button.has-text svg {
+  margin-right: 0;
+}
+
+.gutenberg__editor .edit-post-text-editor__toolbar {
+  display: flex;
+  align-items: center;
+}
+
+.gutenberg__editor .edit-post-text-editor {
+  padding-top: 22px;
+}
+
+.edit-post-layout__metaboxes:not(:empty) {
+  margin-bottom: 38px;
+}
+
+.gutenberg__editor .edit-post-layout .edit-post-sidebar .form-type-radio,
+.gutenberg__editor .edit-post-layout .edit-post-sidebar .form-type-checkbox {
+  padding-left: 0 !important;
+}
+
+.gutenberg__editor .edit-post-layout .edit-post-sidebar .form-type-radio .form-radio {
+  margin-left: 0;
+  margin-right: 0;
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (min-width: 782px) {
+
+  body .gutenberg__editor .edit-post-layout .edit-post-header {
+    top: 60px !important;
+  }
+
+  body.toolbar-horizontal.toolbar-tray-open .edit-post-layout__content {
+    top: 130px !important;
+  }
+
+
+  body.toolbar-horizontal.toolbar-tray-open .edit-post-layout.is-mode-text .edit-post-layout__content {
+    top: 180px !important;
+  }
+
+  body.toolbar-horizontal.toolbar-tray-open .edit-post-header {
+    top: 102px !important;
+  }
+
+  .gutenberg__editor .edit-post-layout .edit-post-sidebar {
+    top: 116px !important;
+  }
+
+  body.toolbar-horizontal.toolbar-tray-open .edit-post-sidebar {
+    top: 158px !important;
+  }
+}
+
+/* Gutenberg 8 */
+.interface-interface-skeleton,
+.toolbar-vertical.toolbar-tray-open .interface-interface-skeleton {
+  top: 60px;
+}
+
+.toolbar-horizontal.toolbar-tray-open .interface-interface-skeleton {
+  top: 102px;
+}
+
+.edit-post-layout__metaboxes {
+  background-color: #ffffff;
+}
+
+.interface-interface-skeleton .edit-post-layout__metaboxes:not(:empty) {
+  margin-bottom: 0;
+}
+
+.edit-post-layout__metaboxes:not(:empty) .edit-post-meta-boxes-area {
+  max-width: 810px;
+  margin: auto;
+}
+
+.interface-interface-skeleton .interface-complementary-area .form-type-checkbox .form-checkbox {
+  margin-left: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.interface-interface-skeleton .interface-complementary-area .form-item.form-type-checkbox {
+  display: flex;
+}
+
+.interface-interface-skeleton .interface-complementary-area .form-item label.option {
+  margin-bottom: 0;
+}
+
+.edit-post-manage-blocks-modal__checklist,
+.edit-post-keyboard-shortcut-help-modal__shortcut-list {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.edit-post-manage-blocks-modal__checklist-item {
+  list-style: none;
+  padding-left: 0;
+}
+
+.edit-post-manage-blocks-modal__checklist-item .components-checkbox-control__label {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.components-checkbox-control__checked {
+  display: none;
+}
+
+.gutenberg input[type=checkbox]:focus,
+input.components-checkbox-control__input:focus {
+  border: 2px solid #ccc;
+}
+
+@media (min-width: 768px) {
+  .components-modal__frame {
+    min-width: 500px;
+  }
+}
+.gutenberg input[type=checkbox]:checked:focus,
+.components-modal__frame input[type=checkbox]:checked:focus {
+  background-color: #0678be;
+  box-shadow: inset 0 0 0 3px #fff;
+  border: 2px solid #11a0d2;
+}
+
+.components-checkbox-control__input-container {
+  width: 24px;
+  height: 24px;
+}
+
+.components-modal__frame input[type=checkbox][aria-checked=mixed] {
+  box-shadow: inset 0 0 0 3px #fff;
+  background-color: #7cbc48;
+  border-color: #7cbc48;
+}
+
+.components-modal__frame input[type=checkbox][aria-checked=mixed]:before {
+  content: unset;
+}
+
+.edit-post-manage-blocks-modal__search .components-base-control__label {
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.edit-post-manage-blocks-modal__category-title .components-checkbox-control__label {
+  margin-bottom: 0;
+}
+
+.components-base-control .components-base-control__field {
+  display: flex;
+  align-items: center;
+}

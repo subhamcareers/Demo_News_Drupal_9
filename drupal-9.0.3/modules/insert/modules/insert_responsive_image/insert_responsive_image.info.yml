@@ -1,0 +1,14 @@
+name: Insert Responsive Image (Experimental)
+type: module
+description: "Allows inserting responsive images into the body field as well as other editor and text areas using the Responsive Image module. Please be aware that this module might not be part of the final Insert 2.0 release!"
+package: Media
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - drupal:responsive_image
+  - insert:insert
+
+# Information added by Drupal.org packaging script on 2020-08-11
+version: '8.x-2.0-beta2'
+project: 'insert'
+datestamp: 1597166252

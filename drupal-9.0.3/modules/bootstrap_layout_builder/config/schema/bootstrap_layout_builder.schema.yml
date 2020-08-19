@@ -1,0 +1,26 @@
+bootstrap_layout_builder.blb_layout_option.*:
+  type: config_entity
+  label: 'Bootstrap Layout Builder Layout option config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    layout_id:
+      type: string
+      label: 'Layout Id'
+    structure:
+      type: string
+      label: 'Structure'
+    breakpoints:
+      type: sequence
+      label: 'Breakpoints'
+      sequence:
+        type: string
+    weight:
+      type: integer
+      label: 'Weight'
+    uuid:
+      type: string

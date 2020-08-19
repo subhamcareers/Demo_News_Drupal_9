@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: thumbnail_65
+label: 'Thumbnail 65X55'
+effects:
+  3a926461-d71b-4198-8c44-8fecd1a0eea5:
+    uuid: 3a926461-d71b-4198-8c44-8fecd1a0eea5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 65
+      height: 55
+      anchor: center-center

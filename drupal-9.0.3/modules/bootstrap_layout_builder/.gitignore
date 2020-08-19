@@ -1,0 +1,5 @@
+# Ignore CSS build artifacts
+node_modules
+
+# Ignore OS settings files.
+.DS_Store*

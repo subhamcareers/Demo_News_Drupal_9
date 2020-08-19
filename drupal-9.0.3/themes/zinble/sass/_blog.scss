@@ -1,0 +1,137 @@
+.blog-wrapper {
+  margin-bottom: 30px;
+  margin-bottom: 50px;
+  .item {
+    .views-field-uid {
+      width: auto;
+      display: inline;
+    }
+    .views-field-created {
+      width: auto;
+      display: inline;
+      float: right;
+    }
+
+    .content-main {
+      border: 1px solid rgba(74, 59, 59, 0.1);
+      border-top: 2px solid #3b99d7;
+      h2 {
+        margin-top: 15px;
+      }
+      p {
+        margin-top: 15px;
+      }
+    }
+    
+    .content-hover {
+	  h2 {
+		color: #fff;
+		top: 25%;
+		position: relative;
+	  }
+	  a {
+     top: 55%;
+     @media screen and (max-width: 900px) {
+       top: 75%;
+     }
+	  }
+	  .views-field-created,
+	  .views-field-uid {
+	    color: #fff;
+	  }
+	}
+  }
+}
+
+
+.zinble-view-block {
+  .second-title {
+    h2 {
+	  padding-bottom: 30px;
+	  padding-top: 15px; 
+	  letter-spacing: 6px;
+      font-size: 32px;
+      text-align: center;
+	  line-height: 32px;
+	  font-weight: 700;
+	  text-transform: uppercase;
+    }
+  }
+}
+
+
+.page-node-type-article {
+  article {
+    .basic-content {
+	  h1 {
+	    margin-bottom: 0px;
+	    width: 100%;
+	    text-align: center;
+	    a {
+	      &:hover {
+	        text-decoration: none;
+	      }
+	    }
+		span {
+		  font-size: 30px;
+		  line-height: 35px;
+		  font-weight: 400;
+		  letter-spacing: 1px;
+		  font-style: italic;
+		  text-align: center;
+		  color: #444444;
+		}
+	  }
+	}
+    p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+      margin-top: 0px;
+      color: #555;
+      font-size: 14px;
+    }
+    div {
+      &.author {
+		color: #444444;
+		padding-bottom: 30px;
+      }
+    
+    }
+    img {
+      margin-top: 10px;
+      margin-bottom: 15px;
+	  width: 100%;
+	  border-radius: 3px;
+    }
+  }
+}
+
+
+.recent-post {
+  .article-media {
+  margin-bottom: 15px;
+  img {
+    width: 100%;
+    border-radius: 3px;
+  }
+    
+  }
+  .article-info {
+  }
+      
+}
+
+
+
+.news-blog-categories {
+  table {
+    a {
+      text-transform: capitalize;
+    }
+    .fa-arrow-right {
+      padding-left: 10px;
+      color: $cerulean;
+      text-decoration: none;
+    }
+  }
+}

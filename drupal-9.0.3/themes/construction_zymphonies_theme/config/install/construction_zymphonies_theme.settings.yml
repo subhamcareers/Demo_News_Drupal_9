@@ -1,0 +1,43 @@
+# Default settings are not located here. Theme settings in general are handled
+# strictly by this base theme via the @BootstrapSetting annotation discovery
+# process. This is to help sub-theme's inherit its settings properly and
+# determine when a setting should be saved to config as "overridden".
+#
+# @see \Drupal\bootstrap\Plugin\SettingBase
+# @see \Drupal\bootstrap\Plugin\SettingInterface
+# @see \Drupal\bootstrap\Plugin\SettingManager
+# @see \Drupal\bootstrap\Plugin\Form\SystemThemeSettings
+
+# Default features.
+features:
+   comment_user_picture: true
+   comment_user_verification: true
+   favicon: true
+   logo: true
+   name: true
+   node_user_picture: true
+   slogan: true
+facebook_url: 'https://www.facebook.com/zymphonies'
+twitter_url: 'https://twitter.com/zymphonies'
+linkedin_url: 'http://www.linkedin.com/company/zymphonies'
+instagram_url: 'https://www.instagram.com/'
+rss_url: 'rss.xml'
+
+# Toggle social media, credit link and slideshow
+show_social_icon: 1
+show_credit_link: 1
+show_slideshow: 1
+
+# Slider default values
+no_of_slides: 2
+
+# Slider default images & description
+slide_title_1: 'The Easiest Way to Get suitable Property'
+slide_description_1: 'Find Flats, Apartments & Real Estate' 
+slide_url_1: '#'
+slide_image_path_1: '/images/slider/slide_01.jpg'
+
+slide_title_2: 'Make a Difference in Your Career Track'
+slide_description_2: 'Find Jobs, Employment & Career Opportunities' 
+slide_url_2: '#'
+slide_image_path_2: '/images/slider/slide_02.jpg'

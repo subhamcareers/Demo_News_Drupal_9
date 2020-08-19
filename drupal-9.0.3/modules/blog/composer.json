@@ -1,0 +1,33 @@
+{
+    "name": "drupal/blog",
+    "description": "Enables multi-user blogs.",
+    "type": "drupal-module",
+    "homepage": "https://www.drupal.org/project/blog",
+    "authors": [
+        {
+            "name": "Kurucz István",
+            "homepage": "https://www.drupal.org/u/nevergone"
+        },
+        {
+            "name": "David Norman",
+            "homepage": "https://www.drupal.org/u/deekayen"
+        },
+        {
+            "name": "Christopher Hall",
+            "homepage": "https://www.drupal.org/u/chris_hall_hu_cheng"
+        },
+        {
+            "name": "Dave Reid",
+            "homepage": "https://www.drupal.org/u/dave-reid"
+        }
+    ],
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/blog",
+        "source": "https://git.drupalcode.org/project/blog"
+    },
+    "require": {
+        "drupal/core": "^8.8 || ^9"
+    },
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev"
+}

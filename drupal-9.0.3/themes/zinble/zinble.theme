@@ -1,0 +1,124 @@
+<?php
+
+/**
+ * @file
+ * Contains theme override functions and preprocess functions.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_preprocess_page() for page.html.twig.
+ */
+function zinble_preprocess_page(array &$variables) {
+  $variables['container'] = theme_get_setting('container');
+  $variables['facebook'] = theme_get_setting('facebook');
+  $variables['google_plus'] = theme_get_setting('google_plus');
+  $variables['twitter'] = theme_get_setting('twitter');
+  $variables['linkedin'] = theme_get_setting('linkedin');
+  $variables['phone_number'] = theme_get_setting('phone_number');
+  $variables['email'] = theme_get_setting('email');
+  $variables['slogan'] = theme_get_setting('slogan');
+  $variables['address'] = theme_get_setting('address');
+  $variables['google_position'] = theme_get_setting('google_position');
+
+  // Sidebars.
+  if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+    $variables['contentlayout'] = 'col-md-6 col-sm-12';
+    $variables['sidebarfirst'] = 'col-md-3 col-sm-12';
+    $variables['sidebarsecond'] = 'col-md-3 col-sm-12';
+  }
+  elseif (!empty($variables['page']['sidebar_first'])) {
+    $variables['contentlayout'] = 'col-md-9 col-sm-12';
+    $variables['sidebarfirst'] = 'col-md-3 col-sm-12';
+  }
+  elseif (!empty($variables['page']['sidebar_second'])) {
+    $variables['contentlayout'] = 'col-md-9 col-sm-12';
+    $variables['sidebarsecond'] = 'col-md-3 col-sm-12';
+  }
+  else {
+    $variables['contentlayout'] = 'col-md-12';
+  }
+}
+
+/**
+ * Implements hook_form_system_theme_settings_alter().
+ */
+function zinble_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  // General Settings.
+  $form['zinble_settings']['general'] = [
+    '#type' => 'details',
+    '#title' => t('General Settings'),
+    '#open' => FALSE,
+  ];
+
+  $form['zinble_settings']['general']['container'] = [
+    '#type' => 'radios',
+    '#title' => t('Container Size'),
+    '#options' => [
+      'container' => 'Default',
+      'container-fluid' => 'Full Width',
+    ],
+    '#default_value' => theme_get_setting('container'),
+  ];
+
+  $form['zinble_settings']['general']['slogan'] = [
+    '#type' => 'textfield',
+    '#title' => t('Help Message'),
+    '#default_value' => theme_get_setting('slogan'),
+  ];
+
+  $form['zinble_settings']['general']['address'] = [
+    '#type' => 'textfield',
+    '#title' => t('Address'),
+    '#default_value' => theme_get_setting('address'),
+  ];
+
+  $form['zinble_settings']['general']['google_position'] = [
+    '#type' => 'textfield',
+    '#title' => t('Google Map Position'),
+    '#default_value' => theme_get_setting('google_position'),
+  ];
+
+  $form['zinble_settings']['general']['email'] = [
+    '#type' => 'textfield',
+    '#title' => t('Email'),
+    '#default_value' => theme_get_setting('email'),
+  ];
+
+  $form['zinble_settings']['general']['phone_number'] = [
+    '#type' => 'textfield',
+    '#title' => t('Phone'),
+    '#default_value' => theme_get_setting('phone_number'),
+  ];
+
+  $form['zinble_settings']['social_icon'] = [
+    '#type' => 'details',
+    '#title' => t('Social Settings'),
+    '#open' => FALSE,
+  ];
+
+  $form['zinble_settings']['social_icon']['facebook'] = [
+    '#type' => 'textfield',
+    '#title' => t('Facebook Link'),
+    '#default_value' => theme_get_setting('facebook'),
+  ];
+
+  $form['zinble_settings']['social_icon']['google_plus'] = [
+    '#type' => 'textfield',
+    '#title' => t('Google plus Link'),
+    '#default_value' => theme_get_setting('google_plus'),
+  ];
+
+  $form['zinble_settings']['social_icon']['twitter'] = [
+    '#type' => 'textfield',
+    '#title' => t('Twitter Link'),
+    '#default_value' => theme_get_setting('twitter'),
+  ];
+
+  $form['zinble_settings']['social_icon']['linkedin'] = [
+    '#type' => 'textfield',
+    '#title' => t('Linkedin Link'),
+    '#default_value' => theme_get_setting('linkedin'),
+  ];
+}

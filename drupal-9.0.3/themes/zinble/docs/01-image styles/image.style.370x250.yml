@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 370x250
+label: 370x250
+effects:
+  9587ed43-bba7-4c53-819b-639f7e8e3c62:
+    uuid: 9587ed43-bba7-4c53-819b-639f7e8e3c62
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 370
+      height: 250
+      anchor: center-center

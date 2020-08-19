@@ -1,0 +1,36 @@
+name: Zinble
+type: theme
+base theme: false
+core: 8.x
+core_version_requirement: ^8 || ^9
+description: 'Zinble is a fully responsive <a href="https://www.drupal.org/8" target="_blank">Drupal 8</a> theme built on Bootstrap 4 framework for faster and easier web development.'
+
+libraries:
+  - zinble/global-styling
+  - zinble/bootstrap
+  - zinble/googlefonts-roboto
+  - zinble/font-awesome
+
+regions:
+  header: Header
+  primary_menu: Primary menu
+  secondary_menu: Secondary menu
+  messages: Messages
+  help: Help
+  breadcrumb: Breadcrumb
+  banner: Banner
+  content_top: Content Top
+  content: Content
+  sidebar_first: Left sidebar
+  sidebar_second: Right sidebar
+  content_bottom: Content Bottom
+  footer1: Footer 1
+  footer2: Footer 2
+  footer3: Footer 3
+  footer4: Footer 4
+  footer: Footer
+
+# Information added by Drupal.org packaging script on 2020-06-03
+version: '2.0.0'
+project: 'zinble'
+datestamp: 1591178721

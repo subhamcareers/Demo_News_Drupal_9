@@ -1,0 +1,51 @@
+.zinble-teaser {
+  clear: both;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  
+  h2 {
+   font-size: 25px;
+   line-height: 30px;
+   font-weight: 400;
+   letter-spacing: 1px;
+   font-style: italic;
+   text-align: center;
+   color: #444444;
+   margin-bottom: 0px;
+   a {
+     color: #444444;
+   }
+  }
+  
+  .author {
+	text-align: center;
+	color: #444444;
+	padding-bottom: 30px;
+  }
+  .field {
+    &.field-node--field-image {
+      width: 25%;
+      display: inline-block;
+      float: left;
+    }
+    &.field-type-text-with-summary {
+      width: 70%;
+      display: inline-block; 
+      float: right;
+    }
+  }
+  
+  .page-tags {
+    clear: both;
+    padding-top: 10px;
+  }
+
+  .links {
+    &.inline {
+      text-align: right;
+      list-style-type: none;
+    }
+  }
+  
+}

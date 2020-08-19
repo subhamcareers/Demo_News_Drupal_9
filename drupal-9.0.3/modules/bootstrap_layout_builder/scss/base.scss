@@ -1,0 +1,38 @@
+@import "variables";
+
+#drupal-off-canvas {
+
+  // Our Custom UI
+  #blb_ui {
+    @import "ui/general";
+    @import "ui/tooltips";
+    @import "ui/tabs";
+  }
+
+  // Add default style for btn to solve Bootstrap 3 drupal theme issue.
+  button {
+    &.button {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      padding: 4px 20px;
+      cursor: pointer;
+      transition: background 0.5s ease;
+      text-align: center;
+      color: #f5f5f5;
+      border: 0;
+      border-radius: 20em;
+      background: #777;
+      font-size: 14px;
+      font-weight: 600;
+
+      &.button--primary {
+        margin-top: 15px;
+        color: $white;
+        border: 0;
+        background: #277abd;
+      }
+    }
+  }
+}

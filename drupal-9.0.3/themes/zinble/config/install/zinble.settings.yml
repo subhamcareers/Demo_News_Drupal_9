@@ -1,0 +1,17 @@
+features:
+  node_user_picture: 1
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+favicon:
+  use_default: 1
+container: 'container-fluid'
+facebook: 'https://www.facebook.com'
+google_plus: 'https://plus.google.com'
+twitter: 'https://www.twitter.com'
+linkedin: 'https://www.linkedin.com'
+slogan: 'Have any questions?'
+email: 'noreply@sitename.com'
+phone_number: '1234567890'
+address: 'Aenean vulputate eleifend tellus.'
+google_position: '35.856737, 10.606619'
